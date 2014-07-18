@@ -32,10 +32,10 @@ Add the following into your Tomcat context.xml (or the context block of the serv
 The Valve must be declared before the Manager.
 
 Copy the tomcat-redis-session-manager.jar,commons-pool2-2.2.jar and jedis-2.5.1.jar files into the lib directory of your Tomcat installation.
-
+support sentinel
 <Valve className="cp149.github.com.RedisSessionHandlerValve" />
 <Manager className="cp149.github.com.RedisSessionManager"
-		 masterName="mymaster"
+		 masterName="mymaster" 
          host="localhost"
          port="26379" 
          database="2"
@@ -47,4 +47,5 @@ Reboot the server, and sessions should now be stored in Redis.
 
 Acknowledgements
 
-The architecture of this project was based on the tomcat-redis-session-manager project found at https://github.com/jcoleman/tomcat-redis-session-manager
+The architecture of this project was based on the tomcat-redis-session-manager project found at 
+https://github.com/jcoleman/tomcat-redis-session-manager
