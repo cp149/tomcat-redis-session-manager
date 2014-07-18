@@ -40,7 +40,7 @@ Copy the tomcat-redis-session-manager.jar,commons-pool2-2.2.jar and jedis-2.5.1.
          port="26379" 
          database="2"
          maxtotal="10"<!-- maxconnection: defaults to "8" -->
-         maxInactiveInterval="60"/>-->
+         maxInactiveInterval="60"/>
 
 Reboot the server, and sessions should now be stored in Redis.
 
