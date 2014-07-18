@@ -25,7 +25,7 @@ Add the following into your Tomcat context.xml (or the context block of the serv
 
 <Valve className="cp149.github.com.RedisSessionHandlerValve" />
 <Manager className="cp149.github.com.RedisSessionManager"
-         host="localhost" <!-- optional: defaults to "localhost" -->
+	host="localhost" <!-- optional: defaults to "localhost" -->
          port="6379" <!-- optional: defaults to "6379" -->
          database="0" <!-- optional: defaults to "0" -->
          maxInactiveInterval="60" <!-- optional: defaults to "60" (in seconds) --> />
