@@ -37,7 +37,7 @@ Add the following into your Tomcat context.xml (or the context block of the serv
 The Valve must be declared before the Manager.
 
 To support sentinel.
-
+```html	
 <Valve className="cp149.github.com.RedisSessionHandlerValve" />
 <Manager className="cp149.github.com.RedisSessionManager"
 		 masterName="mymaster" 
@@ -46,6 +46,7 @@ To support sentinel.
          database="2"
          maxtotal="10"
          maxInactiveInterval="60"/>
+```
 
 Copy the tomcat-redis-session-manager.jar,commons-pool2-2.2.jar and jedis-2.5.1.jar files into the `lib` directory of your Tomcat installation.
 
